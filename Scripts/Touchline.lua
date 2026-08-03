@@ -1,3 +1,5 @@
+local a = game:GetService("Players")
+local b = game:GetService("UserInputService")
 local c = "Null_key.txt"
 local d = "null01"
 
