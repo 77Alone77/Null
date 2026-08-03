@@ -1,38 +1,3 @@
-local v99 = Instance.new("ScreenGui")
-local v100 = Instance.new("ImageButton")
-local v101 = Instance.new("UICorner") 
-
-v99.Parent = game.CoreGui
-v99.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-v100.Parent = v99
-v100.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
-v100.BackgroundTransparency = 1
-v100.BorderSizePixel = 0
-v100.Position = UDim2.new(3.3908420959960495e-07, 209, 0, -47)
-v100.Size = UDim2.new(0, 45, 0, 45)
-v100.Draggable = true
-v100.Image = "http://www.roblox.com/asset/?id=113410311161374"
-
-v101.CornerRadius = UDim.new(1, 0) 
-v101.Parent = v100 
-
-local UserInputService = game:GetService("UserInputService")
-local isMobile = UserInputService.TouchEnabled and not UserInputService.MouseEnabled and not UserInputService.KeyboardEnabled
-
-if isMobile then
-    v100.Visible = true
-else
-    v100.Visible = false
-end
-
-v100.MouseButton1Down:Connect(function()
-    game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
-end)
-
-local a = game:GetService("Players")
-local b = game:GetService("UserInputService")
-
 local c = "Null_key.txt"
 local d = "null01"
 
