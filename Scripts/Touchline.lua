@@ -4,7 +4,6 @@ local c = "Null_key.txt"
 local d = "null01"
 
 local function e()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/77Alone77/Null/refs/heads/main/Files/Webhook.lua"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/77Alone77/Null/refs/heads/main/Scripts/01.lua"))()
 end
 
